@@ -1,4 +1,4 @@
-﻿# 第二章、ROS通信机制
+﻿﻿# 第二章、ROS通信机制
 
 ## 一、话题通信（发布订阅）
 
@@ -879,7 +879,7 @@ if __name__ == "__main__":
 
   [ROS常用命令链接]: http://wiki.ros.org/ROS/CommandLineTools
 
-### 1.rosnode:操作结点
+### 1. rosnode:操作结点
 
 + 是用于获取结点信息的命令
 
@@ -900,7 +900,7 @@ rosnode cleanup // 清除不可连接的节点，也叫僵尸结点
     // rosnode cleanup
 ```
 
-### 2.rostopic:操作话题
+### 2. rostopic:操作话题
 
 + 用于获取ROS主题调试信息，包括订阅者，发布者，发布频率和ROS消息
 + 用法
@@ -921,7 +921,7 @@ rostopic pub    // 将数据发布到主题
 rostopic type   // 打印主题类型
 ```
 
-### 3.rosmsg:操作msg消息
+### 3. rosmsg:操作msg消息
 
 + 显示消息类型
 
@@ -936,7 +936,7 @@ rosmsg packages    	// 列出包含消息的功能包
 
 
 
-### 4.rosservice:操作服务
+### 4. rosservice:操作服务
 
 + 列出和查询服务通信的命令工具
 + 用法
@@ -953,7 +953,7 @@ rosservice type    	// 打印服务数据类型
 rosservice uri    	// 打印服务的 ROSRPC uri
 ```
 
-### 5.rossrv:操作srv消息
+### 5. rossrv:操作srv消息
 
 + 显示服务类型信息的命令
 
@@ -966,7 +966,7 @@ rossrv package	// 显示某个包下所有服务消息
 rossrv packages // 显示包含服务消息的所有包
 ```
 
-### 6.rosparm:操作参数
+### 6. rosparm:操作参数
 
 + 用于使用YAML编码文件在参数服务器上获取和设置ROS参数。
 + 用法
@@ -1129,7 +1129,7 @@ int main(int argc,char* argv[]) {
 
 + **C++实现**
 
-````cpp
+````c++
 #include "ros/ros.h"
 using namespace ros;
 int main(int argc,char* argv[]){
@@ -1140,5 +1140,4 @@ int main(int argc,char* argv[]){
 	return 0;
 }
 ````
-
 
